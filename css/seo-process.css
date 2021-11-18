@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+@import url(global.css);
+
+/* seo process page styles*/
+
+
+/* container styling */
+
+.our-seo-process-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin-top: 90px;
+    margin-bottom: 5px;
+}
+
+#more {
+    display: none;
+}
+
+#more-1 {
+    display: none;
+}
+
+#more-2 {
+    display: none;
+}
+
+#more-3 {
+    display: none;
+}
+
+#more-4 {
+    display: none;
+}
+
+#more-5 {
+    display: none;
+}
+
+.read-more-approach-strech-btn {
+    background-color: white;
+    color: blue;
+}
+
+
+/* left part of the container */
+
+.our-seo-process-container-part-1 {
+    position: relative;
+    background-image: url("../images/finance-4858797.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.our-seo-process-container-part-1-mask {
+    background-color: rgba(10, 9, 9, 0.493);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+
+/* floating box  */
+
+.our-seo-process-container-part-1-info-box {
+    height: max-content;
+    background-color: blue;
+    width: 70%;
+    text-align: center;
+    padding: 3% 5%;
+    color: white;
+    margin: 0 auto;
+    position: relative;
+}
+
+.our-seo-process-container-part-1-info-box>h1 {
+    padding: 2% 0;
+}
+
+.our-seo-process-container-part-1-info-box>p {
+    padding: 2% 0;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.our-seo-process-container-part-1-info-box>img {
+    position: absolute;
+    top: -15%;
+    left: 41%;
+    height: 28%;
+    width: 15%;
+}
+
+.our-seo-process-container-part-1-info-box>button {
+    background-color: white;
+    color: blue;
+    margin: 2% 0;
+    border: 1px solid var(--color-main);
+}
+
+.our-seo-process-container-part-1-info-box>button:hover {
+    background-color: blue;
+    color: white;
+    border: 1px solid var(--color-white);
+    transition-duration: 0.3s;
+}
+
+
+/* left box styling ends here */
+
+
+/* right side styling starts here */
+
+.our-seo-process-container-part-2-steps {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: blue;
+}
+
+
+/* flipping of the div when hovered */
+
+.card {
+    position: relative;
+}
+
+.card-side {
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+}
+
+.card-side.back {
+    transform: rotateY(-180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card:hover .card-side.front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-side.back {
+    transform: rotateY(0deg);
+}
+
+
+/* flipping css */
+
+.our-seo-process-container-part-2-steps-1 {
+    padding: 10% 0;
+    width: 325px;
+    text-align: center;
+    color: white;
+}
+
+.our-seo-process-container-part-2-steps-2 {
+    padding: 10% 0;
+    width: 325px;
+    /* height: 215px; */
+    text-align: center;
+    background: #0156c4;
+    color: white;
+}
+
+.our-seo-process-container-part-2-steps-1>p {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 5% 3%;
+}
+
+.fa-plus-square {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.our-seo-process-container-part-2-steps-2>p {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 5% 3%;
+}
